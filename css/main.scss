@@ -1,0 +1,77 @@
+$main_bg_color:rgb(61, 67, 78);
+$section_bg_color_01:rgba(100, 102, 105, 0.3);
+$section_bg_color_02:rgba(0, 0, 0, 0.2);
+$max_width:1200px;
+$color_main:#3bd834;
+$color_hover:#c4f8c2;
+$center_align:0px auto;
+$right_left_padding:3%;
+$top_bottom_padding:5%;
+
+%main_container {
+    max-width: $max_width;
+    margin: $center_align;
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background-color: $main_bg_color;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    color: #ffffff;
+    padding: 0 20px;
+
+}
+
+a:link,
+a:visited {
+    color: $color_main;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color_hover;
+}
+
+
+/*animated skill level bar to slide right */
+.animated-slide-right {
+    animation: slide-right 2s 0s;
+    -webkit-animation: slide-right 2s 0s;
+    -moz-animation: slide-right 2s 0s;
+    -o-animation: slide-right 2s 0s;
+}
+
+@keyframes slide-right {
+    from {
+        width: 0%
+    }
+}
+
+@-webkit-keyframes slide-right {
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes slide-right {
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes slide-right {
+    from {
+        width: 0%
+    }
+}
+
+
+
