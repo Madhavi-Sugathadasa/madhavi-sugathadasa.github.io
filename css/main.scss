@@ -73,5 +73,41 @@ a:hover {
     }
 }
 
+nav {
+    @extend %main_container;
+    text-align: center;
+    background-color: #000000;
 
+    border-bottom: solid 3px $color_main;
+
+    ul {
+        padding: 5px 20px;
+    }
+
+    ul li {
+        padding: 0 20px;
+
+    }
+
+    .link-font-color:link,
+    .link-font-color:visited {
+        color: #ffffff !important;
+    }
+
+    .link-font-color:hover {
+        color: $color_main !important;
+    }
+
+    .active-link-font-color {
+        color: $color_main !important;
+    }
+
+    .navbar-toggler {
+        background-color: $color_main;
+    }
+
+    .navbar-toggler:focus {
+        outline: 0;
+    }
+}
 
