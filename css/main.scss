@@ -429,6 +429,48 @@ main {
 
     }
 
+     /*****************Education Section*****************/
+    #education {
+        @extend %main_container;
+        background-color: $section_bg_color_01;
+        text-align: center;
+        padding: $top_bottom_padding $right_left_padding;
+
+        .sub-headings {
+            padding-bottom: 8%;
+        }
+
+
+        .edu-sub-container {
+
+            text-align: left;
+            background-color: $section_bg_color_02;
+
+        }
+
+        .edu-sub-container > :first-child {
+
+            border-top: solid 3px $color_main;
+        }
+
+        ul {
+            list-style-type: none;
+            border-bottom: solid 3px $color_main;
+            padding: $right_left_padding;
+            margin: 0;
+
+            li {
+                padding-top: 15px;
+            }
+
+        }
+
+        .edu-content {
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+
     
 }
 
