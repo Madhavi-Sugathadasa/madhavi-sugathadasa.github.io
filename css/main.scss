@@ -111,3 +111,50 @@ nav {
     }
 }
 
+header {
+    @extend %main_container;
+    padding: $top_bottom_padding $right_left_padding;
+    background-color: $section_bg_color_01;
+
+    #profile-pic {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        box-shadow: 5px 10px 8px #000000;
+
+    }
+
+    ul {
+        list-style-type: none;
+
+        .header-content {
+            padding: 0;
+        }
+
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h2 {
+
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    .text-highlight {
+        color: $color_main;
+    }
+}
+
+
