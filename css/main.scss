@@ -471,6 +471,38 @@ main {
         }
     }
 
+    /*****Contact Section******/
+    #contact {
+        background-color: $section_bg_color_01;
+        padding: $top_bottom_padding $right_left_padding;
+
+
+        .social-icon-container {
+            width: 100%;
+            border: 3px solid $color_main;
+            padding: $top_bottom_padding $right_left_padding;
+            margin: 0 auto;
+            background-color: $section_bg_color_02;
+            font-size: 14px;
+
+            table td {
+                padding: 10px;
+            }
+
+        }
+
+    }
+
+    /***********parallax Section***************/
+    .parallax {
+
+        @extend %main_container;
+
+        .parallax-01,
+        .parallax-02 {
+            display: none;
+        }
+    }
     
 }
 
