@@ -295,7 +295,140 @@ main {
         }
     }
 
-    
+    /*****************Experience Section*****************/
+    #experience {
+        @extend %main_container;
+        background-color: $section_bg_color_01;
+        background-image: url('/img/mountain.png');
+        text-align: center;
+        padding: $top_bottom_padding $right_left_padding;
+
+
+        /*********Time Line ******************/
+        .timeline {
+            position: relative;
+            padding-top: $top_bottom_padding;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: $color_main;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            margin-left: -3px;
+
+        }
+
+        /* Full-width containers */
+        .timeline-container {
+            width: 100%;
+            padding: 10px 5px 10px 40px;
+            position: relative;
+            background-color: inherit;
+        }
+
+        /* The circles on the timeline */
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 15px;
+            background-color: $color_main;
+            border: none;
+            top: 24px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Add arrows to the left container  & right container (pointing left) */
+        .left::before,
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            border: medium solid #ffffff;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+        }
+
+        /* Make sure that all arrows are pointing leftwards */
+        .timeline-container::before {
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
+        }
+
+
+        /* Place the container to the left */
+        .left,
+        .right {
+            left: 0;
+        }
+
+
+        /* Make sure all circles are at the same spot */
+        .left::after,
+        .right::after {
+            left: 0px;
+        }
+
+        /* The actual content */
+        .content-left,
+        .content-right {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            position: relative;
+            border-radius: 6px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+
+
+        /*****************TIME LINE EFFECTS****************/
+
+        .timeline .timeline-container::after {
+            transition: background .5s ease-in-out;
+        }
+
+        .timeline .timeline-container.in-view::after {
+            background: #3bd834;
+        }
+
+        .timeline .content-left,
+        .timeline .content-right {
+            visibility: hidden;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+        }
+
+
+        .timeline .content-left {
+            transform: translate3d(0px, 0, 0);
+        }
+
+        .timeline .content-right {
+            transform: translate3d(0px, 0, 0);
+        }
+
+        .timeline .timeline-container.in-view div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+        }
+
+    }
+
     
 }
 
