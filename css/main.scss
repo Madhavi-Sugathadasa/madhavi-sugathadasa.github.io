@@ -157,4 +157,145 @@ header {
     }
 }
 
+fieldset {
+    display: block;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid $color_main;
+    border-radius: 5px;
+}
+
+legend {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    width: auto;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+main {
+    @extend %main_container;
+
+    /********Sub Headings*******/
+
+    .sub-headings {
+        margin: 0;
+        font-size: 1.8em;
+        padding: 3% 3%;
+        text-transform: uppercase;
+        text-align: left;
+
+    }
+
+    .sub-heading-number {
+        color: #b2adad;
+    }
+
+
+    /****Profile Description******/
+    .profile-description {
+        background-color: $section_bg_color_02;
+        padding: $top_bottom_padding $right_left_padding;
+    }
+    
+    
+
+    /*************Professional section with Technical Competencies ****************/
+    #professional {
+
+
+        .prof-section {
+            text-align: center;
+            background-image: url('/img/computer.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: $top_bottom_padding $right_left_padding;
+
+        }
+
+
+        .sub-heading-desc {
+            font-size: 1em;
+            font-weight: 500;
+            display: block;
+            padding-bottom: 7%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+
+        .prof-skills-container {
+            width: 90%;
+        }
+
+        .row-content {
+            padding: 2%;
+        }
+
+        .skill-name {
+            text-align: left;
+        }
+
+        .progress {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            height: 12px;
+        }
+
+        .bg-prog {
+            background-color: $color_main;
+            text-align: right;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /*Technical Competencies*/
+        .sub-heading-skills {
+            font-size: 1.2em;
+            font-weight: 500;
+            display: block;
+            text-transform: uppercase;
+            margin: 0;
+            padding: $right_left_padding;
+            text-align: left;
+            background-color: $section_bg_color_01;
+        }
+
+        .skill-container {
+            background-color: $section_bg_color_02;
+            padding: $top_bottom_padding $right_left_padding;
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .skill-cell {
+            padding: 15px;
+            text-align: center;
+            display: inline-block;
+
+        }
+
+        .skill-heading {
+            font-size: 1em;
+            font-weight: 400;
+            padding-bottom: 10px;
+            border-bottom: solid 3px $color_main;
+        }
+
+        .img-skill {
+            margin: $center_align;
+            max-height: 50px;
+            height: auto;
+            padding-bottom: 10px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+
+    
+    
+}
 
