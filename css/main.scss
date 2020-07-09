@@ -504,5 +504,44 @@ main {
         }
     }
     
+    
+    /*****************Paintings Section*****************/
+    #paintings {
+        @extend %main_container;
+        background-color: $section_bg_color_01;
+        text-align: center;
+        padding: $top_bottom_padding $right_left_padding;
+
+
+        .sub-headings {
+            padding-bottom: 8%;
+        }
+
+        .profile-desc {
+            text-align: left;
+            background-color: $section_bg_color_02;
+            padding: $top_bottom_padding $right_left_padding;
+        }
+
+        .img-content {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+        }
+
+        .row > .img-column {
+            padding: 8px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h5 {
+            padding-top: 15px;
+        }
+    }
+
+    
 }
 
