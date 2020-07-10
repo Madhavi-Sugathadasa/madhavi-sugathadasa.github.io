@@ -1,0 +1,555 @@
+footer, main #paintings, main .parallax, main #education, main #experience, main, header, nav {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d434e;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+a:link,
+a:visited {
+  color: #3bd834;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c4f8c2;
+}
+
+/*animated skill level bar to slide right */
+.animated-slide-right {
+  animation: slide-right 2s 0s;
+  -webkit-animation: slide-right 2s 0s;
+  -moz-animation: slide-right 2s 0s;
+  -o-animation: slide-right 2s 0s;
+}
+
+@keyframes slide-right {
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes slide-right {
+  from {
+    width: 0%;
+  }
+}
+@-moz-keyframes slide-right {
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes slide-right {
+  from {
+    width: 0%;
+  }
+}
+nav {
+  text-align: center;
+  background-color: #000000;
+  border-bottom: solid 3px #3bd834;
+}
+nav ul {
+  padding: 5px 20px;
+}
+nav ul li {
+  padding: 0 20px;
+}
+nav .link-font-color:link,
+nav .link-font-color:visited {
+  color: #ffffff !important;
+}
+nav .link-font-color:hover {
+  color: #3bd834 !important;
+}
+nav .active-link-font-color {
+  color: #3bd834 !important;
+}
+nav .navbar-toggler {
+  background-color: #3bd834;
+}
+nav .navbar-toggler:focus {
+  outline: 0;
+}
+
+header {
+  padding: 5% 3%;
+  background-color: rgba(100, 102, 105, 0.3);
+}
+header #profile-pic {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 10px 8px #000000;
+}
+header ul {
+  list-style-type: none;
+}
+header ul .header-content {
+  padding: 0;
+}
+header .row {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+header .text-highlight {
+  color: #3bd834;
+}
+
+fieldset {
+  display: block;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #3bd834;
+  border-radius: 5px;
+}
+
+legend {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  width: auto;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+main {
+  /********Sub Headings*******/
+  /****Profile Description******/
+  /*************Professional section with Technical Competencies ****************/
+  /*****************Experience Section*****************/
+  /*****************Education Section*****************/
+  /*****Contact Section******/
+  /***********parallax Section***************/
+  /*****************Paintings Section*****************/
+}
+main .sub-headings {
+  margin: 0;
+  font-size: 1.8em;
+  padding: 3% 3%;
+  text-transform: uppercase;
+  text-align: left;
+}
+main .sub-heading-number {
+  color: #b2adad;
+}
+main .profile-description {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5% 3%;
+}
+main #professional {
+  /*Technical Competencies*/
+}
+main #professional .prof-section {
+  text-align: center;
+  background-image: url("/img/computer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 3%;
+}
+main #professional .sub-heading-desc {
+  font-size: 1em;
+  font-weight: 500;
+  display: block;
+  padding-bottom: 7%;
+  text-transform: uppercase;
+  text-align: left;
+}
+main #professional .prof-skills-container {
+  width: 90%;
+}
+main #professional .row-content {
+  padding: 2%;
+}
+main #professional .skill-name {
+  text-align: left;
+}
+main #professional .progress {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  height: 12px;
+}
+main #professional .bg-prog {
+  background-color: #3bd834;
+  text-align: right;
+  color: #000000;
+  font-weight: bold;
+}
+main #professional .sub-heading-skills {
+  font-size: 1.2em;
+  font-weight: 500;
+  display: block;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 3%;
+  text-align: left;
+  background-color: rgba(100, 102, 105, 0.3);
+}
+main #professional .skill-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5% 3%;
+  border-bottom: 3px solid #ffffff;
+}
+main #professional .skill-cell {
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+}
+main #professional .skill-heading {
+  font-size: 1em;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: solid 3px #3bd834;
+}
+main #professional .img-skill {
+  margin: 0px auto;
+  max-height: 50px;
+  height: auto;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+main #experience {
+  background-color: rgba(100, 102, 105, 0.3);
+  background-image: url("/img/mountain.png");
+  text-align: center;
+  padding: 5% 3%;
+  /*********Time Line ******************/
+  /* The actual timeline (the vertical ruler) */
+  /* Full-width containers */
+  /* The circles on the timeline */
+  /* Add arrows to the left container  & right container (pointing left) */
+  /* Make sure that all arrows are pointing leftwards */
+  /* Place the container to the left */
+  /* Make sure all circles are at the same spot */
+  /* The actual content */
+  /*****************TIME LINE EFFECTS****************/
+}
+main #experience .timeline {
+  position: relative;
+  padding-top: 5%;
+}
+main #experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #3bd834;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin-left: -3px;
+}
+main #experience .timeline-container {
+  width: 100%;
+  padding: 10px 5px 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+main #experience .timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 15px;
+  background-color: #3bd834;
+  border: none;
+  top: 24px;
+  border-radius: 50%;
+  z-index: 1;
+}
+main #experience .left::before,
+main #experience .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  border: medium solid #ffffff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+}
+main #experience .timeline-container::before {
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
+}
+main #experience .left,
+main #experience .right {
+  left: 0;
+}
+main #experience .left::after,
+main #experience .right::after {
+  left: 0px;
+}
+main #experience .content-left,
+main #experience .content-right {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  position: relative;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 0.9em;
+}
+main #experience .timeline .timeline-container::after {
+  transition: background 0.5s ease-in-out;
+}
+main #experience .timeline .timeline-container.in-view::after {
+  background: #3bd834;
+}
+main #experience .timeline .content-left,
+main #experience .timeline .content-right {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+main #experience .timeline .content-left {
+  transform: translate3d(0px, 0, 0);
+}
+main #experience .timeline .content-right {
+  transform: translate3d(0px, 0, 0);
+}
+main #experience .timeline .timeline-container.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+main #education {
+  background-color: rgba(100, 102, 105, 0.3);
+  text-align: center;
+  padding: 5% 3%;
+}
+main #education .sub-headings {
+  padding-bottom: 8%;
+}
+main #education .edu-sub-container {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main #education .edu-sub-container > :first-child {
+  border-top: solid 3px #3bd834;
+}
+main #education ul {
+  list-style-type: none;
+  border-bottom: solid 3px #3bd834;
+  padding: 3%;
+  margin: 0;
+}
+main #education ul li {
+  padding-top: 15px;
+}
+main #education .edu-content {
+  font-size: 1em;
+  font-weight: 400;
+}
+main #contact {
+  background-color: rgba(100, 102, 105, 0.3);
+  padding: 5% 3%;
+}
+main #contact .social-icon-container {
+  width: 100%;
+  border: 3px solid #3bd834;
+  padding: 5% 3%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+main #contact .social-icon-container table td {
+  padding: 10px;
+}
+main .parallax .parallax-01,
+main .parallax .parallax-02 {
+  display: none;
+}
+main #paintings {
+  background-color: rgba(100, 102, 105, 0.3);
+  text-align: center;
+  padding: 5% 3%;
+}
+main #paintings .sub-headings {
+  padding-bottom: 8%;
+}
+main #paintings .profile-desc {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5% 3%;
+}
+main #paintings .img-content {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+}
+main #paintings .row > .img-column {
+  padding: 8px;
+}
+main #paintings img {
+  width: 100%;
+}
+main #paintings h5 {
+  padding-top: 15px;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer img {
+  width: 20px;
+}
+
+@media (min-width: 480px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    /*************Professional section with Technical Competencies ****************/
+  }
+  main .sub-headings {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  main #professional .sub-heading-desc {
+    text-align: center;
+  }
+  main #contact .social-icon-container {
+    width: 60%;
+    font-size: 16px;
+  }
+  main #professional .row-content {
+    padding: 1%;
+  }
+  main #professional .sub-heading-skills {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 5rem;
+  }
+  header h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    /*************Professional section with Technical Competencies ****************/
+    /**********Work Experience with Time Line************/
+    /***********parallax Section***************/
+  }
+  main #contact .social-icon-container {
+    width: 50%;
+  }
+  main #professional .prof-skills-container {
+    width: 80%;
+  }
+  main #professional .skill-name {
+    text-align: right;
+  }
+  main #experience {
+    /*            center align the time line vertical ruler */
+    /* Container around content */
+    /* Place the container to the left */
+    /* Place the container to the right */
+    /* Add arrows to the left container (pointing right) */
+    /* set the arrows alignment to the right container (pointing left) */
+    /* Fix the circle for containers on the right side */
+    /**********Time Line End***********************/
+  }
+  main #experience .timeline::after {
+    left: 50%;
+  }
+  main #experience .timeline-container {
+    padding: 10px 40px;
+    width: 50%;
+  }
+  main #experience .timeline-container::after {
+    left: auto;
+    /* else use unset , but it is not support by IE*/
+    right: -8px;
+  }
+  main #experience .left {
+    left: 0;
+  }
+  main #experience .right {
+    left: 50%;
+  }
+  main #experience .left::before {
+    left: auto;
+    /* else use unset , but it is not support by IE*/
+    right: 30px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+  }
+  main #experience .right::before {
+    left: 30px;
+  }
+  main #experience .right::after {
+    left: -10px;
+  }
+  main #experience .content-left {
+    text-align: right;
+  }
+  main .parallax .parallax-01,
+main .parallax .parallax-02 {
+    display: block;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .parallax .parallax-01 {
+    background-image: url("/img/contact_1.png");
+  }
+  main .parallax .parallax-02 {
+    background-image: url("/img/contact.png");
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
