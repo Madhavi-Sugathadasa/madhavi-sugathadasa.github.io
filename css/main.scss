@@ -73,6 +73,8 @@ a:hover {
     }
 }
 
+
+
 nav {
     @extend %main_container;
     text-align: center;
@@ -200,8 +202,7 @@ main {
         background-color: $section_bg_color_02;
         padding: $top_bottom_padding $right_left_padding;
     }
-    
-    
+
 
     /*************Professional section with Technical Competencies ****************/
     #professional {
@@ -294,6 +295,7 @@ main {
             display: table-cell;
         }
     }
+
 
     /*****************Experience Section*****************/
     #experience {
@@ -429,7 +431,7 @@ main {
 
     }
 
-     /*****************Education Section*****************/
+    /*****************Education Section*****************/
     #education {
         @extend %main_container;
         background-color: $section_bg_color_01;
@@ -503,8 +505,7 @@ main {
             display: none;
         }
     }
-    
-    
+
     /*****************Paintings Section*****************/
     #paintings {
         @extend %main_container;
@@ -541,8 +542,8 @@ main {
             padding-top: 15px;
         }
     }
-
 }
+
 
 footer {
     @extend %main_container;
@@ -560,3 +561,206 @@ footer {
     }
 }
 
+@media (min-width:480px) {
+    header {
+        h1 {
+
+            font-size: 3rem;
+
+        }
+
+        h2 {
+
+            font-size: 1.5rem;
+
+        }
+    }
+
+}
+
+@media (min-width:768px) {
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        h1 {
+
+            font-size: 4rem;
+
+        }
+
+        h2 {
+
+            font-size: 1.8rem;
+
+        }
+    }
+
+    main {
+        .sub-headings {
+
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        #professional {
+            .sub-heading-desc {
+                text-align: center;
+            }
+        }
+
+        #contact {
+
+            .social-icon-container {
+                width: 60%;
+                font-size: 16px;
+            }
+        }
+
+        /*************Professional section with Technical Competencies ****************/
+        #professional {
+
+            .row-content {
+                padding: 1%;
+            }
+
+            .sub-heading-skills {
+                font-size: 1.5em;
+                text-align: center;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width:1024px) {
+    header {
+        h1 {
+
+            font-size: 5rem;
+
+        }
+
+        h2 {
+
+            font-size: 2rem;
+
+        }
+    }
+
+    main {
+        #contact {
+
+            .social-icon-container {
+                width: 50%;
+            }
+
+        }
+
+        /*************Professional section with Technical Competencies ****************/
+        #professional {
+
+            .prof-skills-container {
+                width: 80%;
+            }
+
+            .skill-name {
+                text-align: right;
+            }
+
+        }
+
+
+        /**********Work Experience with Time Line************/
+        #experience {
+
+
+            /*            center align the time line vertical ruler */
+            .timeline::after {
+                left: 50%;
+            }
+
+            /* Container around content */
+            .timeline-container {
+                padding: 10px 40px;
+                width: 50%;
+            }
+
+            .timeline-container::after {
+
+                left: auto;
+                /* else use unset , but it is not support by IE*/
+                right: -8px;
+
+
+            }
+
+            /* Place the container to the left */
+            .left {
+                left: 0;
+            }
+
+            /* Place the container to the right */
+            .right {
+                left: 50%;
+            }
+
+            /* Add arrows to the left container (pointing right) */
+            .left::before {
+                left: auto;
+                /* else use unset , but it is not support by IE*/
+                right: 30px;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+            }
+
+            /* set the arrows alignment to the right container (pointing left) */
+            .right::before {
+                left: 30px;
+            }
+
+
+            /* Fix the circle for containers on the right side */
+            .right::after {
+                left: -10px;
+            }
+
+
+            .content-left {
+                text-align: right;
+            }
+
+
+            /**********Time Line End***********************/
+
+
+        }
+
+        /***********parallax Section***************/
+
+        .parallax {
+
+            .parallax-01,
+            .parallax-02 {
+                display: block;
+                min-height: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .parallax-01 {
+                background-image: url("/img/contact_1.png");
+
+            }
+
+            .parallax-02 {
+                background-image: url("/img/contact.png");
+            }
+        }
+    }
+}
