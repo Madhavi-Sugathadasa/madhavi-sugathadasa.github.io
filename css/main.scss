@@ -210,7 +210,7 @@ main {
 
         .prof-section {
             text-align: center;
-            background-image: url('/img/computer.png');
+            background-image: url('img/computer.png');
             background-repeat: no-repeat;
             background-size: cover;
             padding: $top_bottom_padding $right_left_padding;
@@ -301,7 +301,7 @@ main {
     #experience {
         @extend %main_container;
         background-color: $section_bg_color_01;
-        background-image: url('/img/mountain.png');
+        background-image: url('img/mountain.png');
         text-align: center;
         padding: $top_bottom_padding $right_left_padding;
 
@@ -754,12 +754,12 @@ footer {
             }
 
             .parallax-01 {
-                background-image: url("/img/contact_1.png");
+                background-image: url("img/contact_1.png");
 
             }
 
             .parallax-02 {
-                background-image: url("/img/contact.png");
+                background-image: url("img/contact.png");
             }
         }
     }

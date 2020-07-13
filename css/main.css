@@ -164,7 +164,7 @@ main #professional {
 }
 main #professional .prof-section {
   text-align: center;
-  background-image: url("/img/computer.png");
+  background-image: url("img/computer.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5% 3%;
@@ -234,7 +234,7 @@ main #professional .img-skill {
 }
 main #experience {
   background-color: rgba(100, 102, 105, 0.3);
-  background-image: url("/img/mountain.png");
+  background-image: url("img/mountain.png");
   text-align: center;
   padding: 5% 3%;
   /*********Time Line ******************/
@@ -545,10 +545,10 @@ main .parallax .parallax-02 {
     background-size: cover;
   }
   main .parallax .parallax-01 {
-    background-image: url("/img/contact_1.png");
+    background-image: url("img/contact_1.png");
   }
   main .parallax .parallax-02 {
-    background-image: url("/img/contact.png");
+    background-image: url("img/contact.png");
   }
 }
 
